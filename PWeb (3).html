@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hathor Tasche Bolsas</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+        body {
+            background-color: gray;
+            width: 960px;
+            margin: auto;
+        }
+        header, section, footer {
+            font-family: Arial;
+            font-size: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        span {
+            color: black;
+        }
+        header {
+            background-color: rgb(235, 211, 151);
+            min-height: 60px;
+            min-width: 960px;
+        }
+        section {
+            background-color: rgb(196, 190, 177);
+            min-height: 90px;
+            min-width: 960px; 
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(235, 211, 151);
+            min-height: 60px;
+            min-width: 960px;
+        }
+        h1 {
+            color: rgb(31, 28, 27);
+        }
+        h2 {
+            color: rgb(121, 37, 37);
+        }
+        h3 {
+            color: rgb(87, 84, 84);
+        }
+        h4 {
+            color: rgb(87, 85, 85);
+        }
+        .img {
+            height: 300px;
+            width: 300px;
+        }
+        .img1 {
+            height: 125px;
+            width: 125px;
+        }
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hathor Tasche Bolsas</h1>
+        <p>Bolsas em couro legítimo</p>
+        <p>Beleza e Qualidade</p>
+    </header>
+    <main>
+        <section class="produtos">
+            <div class="produto">
+                <img src="Imagens/Modelo Júlia.jpeg" class="img" alt="Bolsa Magnólia">
+                <h2>Bolsa Magnólia</h2>
+                <p>Valor: R$ 350,00</p>
+                <p>Dimensões: 35x20x15cm</p>
+                <p>Cor: preto</p>
+                <p>Material: Couro Legítimo</p>
+                <button onclick="comprar('Bolsa Magnólia')">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="Imagens/Modelo Heloísa.jpeg" class="img" alt="Bolsa Chloé">
+                <h2>Bolsa Chloé</h2>
+                <p>Valor: R$ 200,00</p>
+                <p>Dimensões: 20x217x7cm</p>
+                <p>Cor: Bege acinzentado</p>
+                <p>Material: Couro Legítimo</p>
+                <button onclick="comprar('Bolsa Chloé')">Comprar</button>
+            </div>0
+            <div class="produto">
+                <img src="Imagens/Modelo Ângela.jpg" class="img" alt="Bolsa Allure">
+                <h2>Bolsa Allure</h2>
+                <p>Valor: R$ 250,00</p>
+                <p>Dimensões: 10x20x7cm</p>
+                <p>Cor: Dourado</p>
+                <p>Material: Couro Legítimo</p>
+                <button onclick="comprar('Bolsa Allure')">Comprar</button>
+            </div>
+        </section>
+        <section class="team-section">
+            <h3>Conheça a Nossa Equipe:</h3>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="imagens/IMG-20220228-WA0047.jpg" class="img1" alt="Membro 1">
+                    <h4>Gabriela Straub</h4>
+                    <p>Designer de Bolsas</p>
+                </div>
+                <div class="team-member">
+                    <img src="imagens/flavia.jpg" class="img1" alt="Membro 2">
+                    <h4>Flávia Melo</h4>
+                    <p>Gerente de Produto</p>
+                </div>
+                <div class="team-member">
+                    <img src="imagens/IMG-20211219-WA0068.jpg" class="img1" alt="Membro 3">
+                    <h4>Roberta Gusmão</h4>
+                    <p>Especialista em Vendas</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>Cadastre-se para receber novidades e promoções</h1>
+        <form id="promoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="Whatsapp">Whatsapp:</label>
+            <input type="Whatsapp" id="Whatsapp" name="Whatsapp" required><br><br>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p>&copy; 2024, Hathor Tasche Bolsas.</p>
+        <p>Follow @hathor_bolsas</p>
+    </footer>
+    <footer>
+        <p>Termos e Condições | Política de Privacidade</p>
+        <p>Contato: faleconosco@hathortasche.com.br | Telefone: (61) 99972-4616</p>
+        <p>Endereço: SQS 403, bloco B, sala 48 - Brasília, DF</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
